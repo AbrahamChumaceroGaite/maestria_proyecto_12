@@ -8,7 +8,7 @@ services:
     build: ./users-service
     container_name: users-service
     env_file:
-      - ./users-service/.env
+      - ./users-service/.env.example
     expose:
       - "3001"
     networks:
@@ -22,7 +22,7 @@ services:
     build: ./academic-service
     container_name: academic-service
     env_file:
-      - ./academic-service/.env
+      - ./academic-service/.env.example
     expose:
       - "3002"
     networks:

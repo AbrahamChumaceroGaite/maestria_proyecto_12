@@ -11,9 +11,9 @@ El objetivo es aplicar DevSecOps de manera práctica, integrando:
 # 1. Adición del Front-end
 
 [ Front-end ]
-     |
-     | Login / JWT
-     v
+         |
+         | Login / JWT
+         v
 [ users-service ]
      |
      | JWT
@@ -119,5 +119,4 @@ docker build -t users-service backend/users-service
 docker build -t academic-service backend/academic-service
 docker build -t api-gateway backend/api-gateway
 docker build -t frontend frontend
-
 kubectl apply -f k8s/
